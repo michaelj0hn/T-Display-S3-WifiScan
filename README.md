@@ -8,3 +8,6 @@ Create folder called "WifiScanS3" and place the file from this repo there.
 ## Use
 This demo app scans Wifi networks every 5 seconds and shows discovered networks on the module screen. \
 The right button can be used to circle between the 4 different views (fonts & details), the content will be updated once the current scan completes.
+
+## Example Screens
+![2 screen views](example_screens.jpg)

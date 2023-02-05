@@ -7,7 +7,7 @@ int APP_BORDER = APP_FONTSIZE * 4;
 int APP_LINE = APP_FONTSIZE * 8;
 int APP_TITELSIZE = APP_LINE + APP_BORDER;
 int APP_BOX = APP_LINE * 3;  // app uses 3 lines per AP element rectangle
-int MAX_ELEM = 10 // view 0 10, 1 5, 2 30, 3 15
+int MAX_ELEM = 10;
 
 TFT_eSPI lcd = TFT_eSPI();
 TFT_eSprite sprite = TFT_eSprite(&lcd);
@@ -70,7 +70,7 @@ void loop() {
       APP_LINE = APP_FONTSIZE * 8;
       APP_TITELSIZE = APP_LINE + APP_BORDER;
       APP_BOX = APP_LINE * 3;  // app uses 3 lines per AP element rectangle
-      MAX_ELEM = 10
+      MAX_ELEM = 10;
     }
     if (view == 1) {
       APP_FONTSIZE = 2;
@@ -78,7 +78,7 @@ void loop() {
       APP_LINE = APP_FONTSIZE * 8;
       APP_TITELSIZE = APP_LINE + APP_BORDER;
       APP_BOX = APP_LINE * 3;  // app uses 3 lines per AP element rectangle
-      MAX_ELEM = 5
+      MAX_ELEM = 5;
     }
     if (view == 2) {
       APP_FONTSIZE = 1;
@@ -86,7 +86,7 @@ void loop() {
       APP_LINE = APP_FONTSIZE * 8;
       APP_TITELSIZE = APP_LINE + APP_BORDER;
       APP_BOX = APP_LINE;  // app uses 1 line per AP element rectangle
-      MAX_ELEM = 30
+      MAX_ELEM = 30;
     }
 
     if (view == 3) {
@@ -95,7 +95,7 @@ void loop() {
       APP_LINE = APP_FONTSIZE * 8;
       APP_TITELSIZE = APP_LINE + APP_BORDER;
       APP_BOX = APP_LINE;  // app uses 1 line per AP element rectangle
-      MAX_ELEM = 15
+      MAX_ELEM = 15;
     }
     //re-draw green header and footer
     sprite.fillRoundRect(0, 0, TFT_WIDTH, TFT_HEIGHT, 3, TFT_BLACK);
